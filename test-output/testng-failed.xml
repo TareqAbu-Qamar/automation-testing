@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GP Virtual Store Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="End To End Test(failed)">
+    <classes>
+      <class name="TestCases.HomeTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="feedbackTest"/>
+        </methods>
+      </class> <!-- TestCases.HomeTest -->
+      <class name="TestCases.DashboardTest">
+        <methods>
+          <include name="usersTest"/>
+          <include name="itemsTest"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- TestCases.DashboardTest -->
+      <class name="TestCases.SignupTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="signupTest"/>
+        </methods>
+      </class> <!-- TestCases.SignupTest -->
+    </classes>
+  </test> <!-- End To End Test(failed) -->
+</suite> <!-- Failed suite [GP Virtual Store Test] -->
